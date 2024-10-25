@@ -28,3 +28,39 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  h1 {
+    @apply font-inter font-bold text-128 text-offWhite;
+  }
+  h2 {
+    @apply font-inter text-96 font-bold text-offWhite;
+  }
+  h3 {
+    @apply font-italiana text-70  text-offWhite;
+  }
+  h4 {
+    @apply font-italiana text-64  text-offWhite;
+  }
+  h5 {
+    @apply font-italiana text-32  text-offWhite;
+  }
+  h6 {
+    @apply font-jura text-32  text-offWhite;
+  }
+  h8 {
+    @apply font-inter text-16  text-offWhite;
+  }
+  h9 {
+    @apply font-jura font-bold text-16  text-offWhite;
+  }
+  h10 {
+    @apply font-inter text-14  text-offWhite;
+  }
+  h11 {
+    @apply font-inter text-12  text-offWhite;
+  }
+  p {
+    @apply font-jura  text-xl text-offWhite leading-[40px];
+  }
+}
