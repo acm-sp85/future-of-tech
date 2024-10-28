@@ -57,6 +57,37 @@ export default function Home() {
           </span>
         </div>
       </nav>
+      <div className="w-full h-[60vh] -mt-10 flex items-end justify-center">
+        <div className="h-[30vh] w-[50vw]  mb-10 flex items-end justify-center ">
+          <Image
+            src="/a-drawing-of-a-futuristic-building-(white).png"
+            alt="building-L"
+            width={300}
+            height={300}
+          />
+          <Image
+            src="/a-drawing-of-an-electric-vehicle-with-no-background-(green).png"
+            alt="car"
+            width={300}
+            height={300}
+          />
+          <Image
+            src="/a-drawing-of-a-futuristic-building-(whiteR).png"
+            alt="building-R"
+            width={300}
+            height={300}
+          />
+        </div>
+      </div>
+      <div className="w-full h-[40vh] flex flex-col ">
+        <div className="w-full flex flex-col absolute bottom-0 ">
+          <div className="bg-red w-full h-px"></div>
+          <span className="h1-style ml-8 mb-[-15px]">The Future</span>
+          <div className="bg-yellow w-full h-[2px] mb-[-15px]"></div>
+          <span className="h1-style  ml-8 mb-[-15px]">of Technology</span>
+          <div className="bg-blue w-full h-[3px]"></div>
+        </div>
+      </div>
     </div>
   );
 }
