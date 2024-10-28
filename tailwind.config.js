@@ -13,7 +13,7 @@ module.exports = {
         jura: ['Jura', 'sans-serif'],
       },
       colors: {
-        background: 'var(--background)',
+        background: '#282828',
         foreground: 'var(--foreground)',
         darkGrey: '#282828',
         yellow: '#F69425',
