@@ -80,12 +80,17 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-[40vh] flex flex-col ">
-        <div className="w-full flex flex-col absolute bottom-0 ">
+        <div className="w-full flex flex-col absolute bottom-0  ">
           <div className="bg-red w-full h-px"></div>
           <span className="h1-style ml-8 mb-[-15px]">The Future</span>
           <div className="bg-yellow w-full h-[2px] mb-[-15px]"></div>
           <span className="h1-style  ml-8 mb-[-15px]">of Technology</span>
           <div className="bg-blue w-full h-[3px]"></div>
+
+          <p className="p-style absolute bottom-[-1px] right-5">
+            {' '}
+            &#8595; Scroll Down
+          </p>
         </div>
       </div>
     </div>
