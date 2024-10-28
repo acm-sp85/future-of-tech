@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="bg-darkGrey  h-5000">
-      <nav className="flex sticky top-5 mr-5">
+      <nav className="flex sticky top-5 w-full">
         <div className="w-[15%] h-8 flex items-center ml-5 text-white">
           <Image
             src="/logo.png" // Put your logo in the public folder
@@ -51,9 +51,11 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <span className="h11-style w-[15%] bg-red rounded-2xl h-8 flex items-center justify-center">
-          Download The Report
-        </span>
+        <div className="w-[15%] flex justify-end mr-5">
+          <span className="h11-style bg-red rounded-2xl h-8 px-5 flex items-center justify-center ">
+            Download The Report
+          </span>
+        </div>
       </nav>
     </div>
   );
