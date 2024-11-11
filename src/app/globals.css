@@ -29,6 +29,9 @@ body {
     text-wrap: balance;
   }
 }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
 
 @layer base {
   .h1-style {

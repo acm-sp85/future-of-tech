@@ -2,17 +2,11 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="bg-darkGrey  h-5000">
+    <div className="bg-darkGrey  h-[7000px]">
       {/* NAV BAR */}
       <nav className="flex sticky top-5 w-full">
         <div className="w-[15%] h-8 flex items-center ml-5 text-white">
-          <Image
-            src="/logo.png" // Put your logo in the public folder
-            alt="Logo"
-            width={150} // Adjust size as needed
-            height={150} // Adjust size as needed
-            // priority // If this is above the fold
-          />
+          <Image src="/logo.png" alt="Logo" width={150} height={150} />
         </div>
         <div className="w-[70%]  h-8 flex items-center justify-left">
           <div className="flex items-center justify-between">
@@ -60,7 +54,7 @@ export default function Home() {
       </nav>
       {/* LANDING IMAGES */}
       <div className="w-full h-[60vh] -mt-10 flex items-end justify-center">
-        <div className="h-[30vh] w-[50vw]  mb-10 flex items-end justify-center ">
+        <div className="h-[30vh] w-[50vw]  mb-10 flex items-end justify-center opacity-80 ">
           <Image
             src="/a-drawing-of-a-futuristic-building-(white).png"
             alt="building-L"
@@ -69,9 +63,10 @@ export default function Home() {
           />
           <Image
             src="/a-drawing-of-an-electric-vehicle-with-no-background-(green).png"
+            className="translate-y-10"
             alt="car"
-            width={300}
-            height={300}
+            width={200}
+            height={200}
           />
           <Image
             src="/a-drawing-of-a-futuristic-building-(whiteR).png"
@@ -116,11 +111,11 @@ export default function Home() {
             continues to advance, it has the potential to revolutionize
             industries and transform our daily lives.
           </p>
-          <div className=" flex  mt-24 mr-24 justify-center ">
+          <div className=" flex  mt-24 mr-24 justify-center opacity-70 ">
             <Image
               src="/an-ink-drawing-of-an-artificial-intelligence STAR.png"
               alt="star-L"
-              class="w-auto h-32 mt-[150px]"
+              class="w-auto h-32 mt-[150px] rotate-180"
               width={100}
               height={100}
             />
@@ -142,9 +137,96 @@ export default function Home() {
           </div>
         </div>
         <div className="  bg-red h-[100vh] w-[1px]"></div>
-        <div className="w-[50vw] h-[100vh] "></div>
+        <div className="w-[50vw] h-[100vh] p-style overflow-y-scroll scrollbar-hide  ml-auto">
+          <Image
+            src="/temp-graphics-01.png"
+            alt="star-R"
+            class="w-auto object-contain"
+            width={10000}
+            height={10000}
+          />
+        </div>
       </div>
-      <div className="bg-blue w-full h-[100vh]"></div>
+      <div className="bg-yellow w-full h-[2px]  "> </div>
+      <div className="bg-blue w-full h-[1px] mt-1 "> </div>
+
+      <div className=" w-full h-[2500px] ">
+        <div className=" w-full h-[150px] flex">
+          <p className="h3-style ml-8 mt-24 w-full  ">AR & VR</p>
+        </div>
+        <div className=" w-full h-[300px] flex">
+          <div className="w-[50vw] h-full ">
+            <p className="p-style ml-24 mr-24 mt-24">
+              <b> Augmented Reality (AR)</b> overlays digital information on the
+              real world, enhancing our perception of reality. AR applications
+              range from gaming and education to retail and industrial
+              applications.
+            </p>
+          </div>
+          <div className="w-[50vw] h-full ">
+            <p className="p-style ml-24 mr-24 mt-24">
+              <b>Virtual Reality (VR)</b> immerses users in a completely digital
+              environment. It requires specialized headsets that display a
+              360-degree view of the virtual world. VR is commonly used for
+              gaming, entertainment, training, and simulations.
+            </p>
+          </div>
+        </div>
+        <div className=" h-[1000px] flex">
+          <div className="  w-[60%] flex justify-center translate-x-[200px] translate-y-[100px] opacity-70">
+            <Image
+              src="/drawing-of-a-planet-with-no-background.png"
+              alt="planet-top-left"
+              class="w-auto h-[150px] translate-x-[100px]"
+              width={100}
+              height={100}
+            />
+
+            <Image
+              src="/an-ink-drawing-of-the-solar-system.png"
+              alt="solar-system"
+              class="w-auto h-[450px]"
+              width={200}
+              height={200}
+            />
+            <Image
+              src="/a-three-tone-drawing-of-a-woman-wearing-a-vr-headset-20164142.png"
+              alt="girl-VR"
+              class="w-auto h-[375px] -translate-x-[430px] -translate-y-[10px]"
+              width={300}
+              height={300}
+            />
+            <Image
+              src="/a-drawing-of-a-futuristic-spaceship- (1).png"
+              alt="spaceship-top-right"
+              class="w-auto h-[200px] rotate-180 -translate-x-[450px]"
+              width={100}
+              height={100}
+            />
+            <Image
+              src="/drawing-of-a-planet-with-no-background (1).png"
+              alt="planet-bottom-right"
+              class="w-auto h-32  -translate-x-[670px] translate-y-[270px]"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="  w-[40%] mt-20">
+            <p className="h8-style w-[300px] mt-20">
+              AR market: Projected to reach $198 billion by 2028, according to
+              Grand View Research.
+            </p>
+            <p className="h8-style w-[300px] mt-20">
+              VR market: Estimated to grow at a CAGR of 44.1% from 2022 to 2030,
+              according to Allied Market Research.
+            </p>
+            <p className="h8-style w-[300px] mt-20">
+              AR/VR adoption: The gaming industry is the largest adopter of
+              AR/VR technologies, followed by healthcare and education.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      scrollbar: {
+        hide: {
+          overflow: 'hidden',
+          '-ms-overflow-style': 'none' /* IE and Edge */,
+          'scrollbar-width': 'none' /* Firefox */,
+        },
+      },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         italiana: ['Italiana', 'sans-serif'],
