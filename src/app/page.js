@@ -2,59 +2,40 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="bg-darkGrey  h-[7000px]">
+    <div className="h-[7000px] bg-darkGrey">
       {/* NAV BAR */}
-      <nav className="flex sticky top-5 w-full">
-        <div className="w-[15%] h-8 flex items-center ml-5 text-white">
+      <nav className="sticky top-5 flex w-full">
+        <div className="ml-5 flex h-8 w-[15%] items-center text-white">
           <Image src="/logo.png" alt="Logo" width={150} height={150} />
         </div>
-        <div className="w-[70%]  h-8 flex items-center justify-left">
+        <div className="justify-left flex h-8 w-[70%] items-center">
           <div className="flex items-center justify-between">
-            <span
-              className=" h8-style w-44
-        
-          flex items-center justify-center"
-            >
+            <span className="h8-style flex w-44 items-center justify-center">
               Artificial Intelligence
             </span>
-            <span
-              className=" h8-style w-44
-        
-    flex items-center justify-center"
-            >
+            <span className="h8-style flex w-44 items-center justify-center">
               AR & VR
             </span>
-            <span
-              className=" h8-style w-44
-        
-         flex items-center justify-center"
-            >
+            <span className="h8-style flex w-44 items-center justify-center">
               Block Chain
             </span>
-            <span
-              className="  h8-style w-44
-        
-         flex items-center justify-center"
-            >
+            <span className="h8-style flex w-44 items-center justify-center">
               Bio-Tech
             </span>
-            <span
-              className=" h8-style w-44
-        flex items-center justify-center"
-            >
+            <span className="h8-style flex w-44 items-center justify-center">
               Sustainable Tech
             </span>
           </div>
         </div>
-        <div className="w-[15%] flex justify-end mr-5">
-          <span className="h11-style bg-red rounded-2xl h-8 px-5 flex items-center justify-center ">
+        <div className="mr-5 flex w-[15%] justify-end">
+          <span className="h11-style flex h-8 items-center justify-center rounded-2xl bg-red px-5">
             Download The Report
           </span>
         </div>
       </nav>
       {/* LANDING IMAGES */}
-      <div className="w-full h-[60vh] -mt-10 flex items-end justify-center">
-        <div className="h-[30vh] w-[50vw]  mb-10 flex items-end justify-center opacity-80 ">
+      <div className="-mt-10 flex h-[60vh] w-full items-end justify-center">
+        <div className="mb-10 flex h-[30vh] w-[50vw] items-end justify-center opacity-80">
           <Image
             src="/a-drawing-of-a-futuristic-building-(white).png"
             alt="building-L"
@@ -78,28 +59,28 @@ export default function Home() {
       </div>
 
       {/* THE FUTURE OF TECHNOLOGY */}
-      <div className="w-full h-[40vh] flex flex-col ">
-        <div className="w-full flex flex-col absolute bottom-0  ">
-          <div className="bg-red w-full h-px"></div>
-          <span className="h1-style ml-8 mb-[-15px]">The Future</span>
-          <div className="bg-yellow w-full h-[2px] mb-[-15px]"></div>
-          <span className="h1-style  ml-8 mb-[-15px]">of Technology</span>
-          <div className="bg-blue w-full h-[3px]"></div>
+      <div className="flex h-[40vh] w-full flex-col">
+        <div className="absolute bottom-0 flex w-full flex-col">
+          <div className="h-px w-full bg-red"></div>
+          <span className="h1-style mb-[-15px] ml-8">The Future</span>
+          <div className="mb-[-15px] h-[2px] w-full bg-yellow"></div>
+          <span className="h1-style mb-[-15px] ml-8">of Technology</span>
+          <div className="h-[3px] w-full bg-blue"></div>
 
           <p className="p-style absolute bottom-[-1px] right-5">
-            {' '}
+            {" "}
             &#8595; Scroll Down
           </p>
         </div>
       </div>
       {/* GLOBAL IMPACT... */}
-      <div className="w-full h-[100vh] flex flex-col  justify-center">
-        <p className="h2-style ml-8 mb-[-15px] ">Global Impact of</p>
-        <p className="h2-style -mt-5 ml-8 mb-[-15px]">Cutting-Edge Tech</p>
+      <div className="flex h-[100vh] w-full flex-col justify-center">
+        <p className="h2-style mb-[-15px] ml-8">Global Impact of</p>
+        <p className="h2-style -mt-5 mb-[-15px] ml-8">Cutting-Edge Tech</p>
       </div>
-      <div className="bg-yellow w-full h-[1px]  flex"> </div>
-      <div className="w-full  flex">
-        <div className="w-[50vw] h-[100vh] ">
+      <div className="flex h-[1px] w-full bg-yellow"> </div>
+      <div className="flex w-full">
+        <div className="h-[100vh] w-[50vw]">
           <p className="h3-style ml-8 mt-24">Artificial Intelligence (AI)</p>
           <p className="p-style ml-24 mr-24 mt-24">
             AI is the simulation of human intelligence in machines, programmed
@@ -111,11 +92,11 @@ export default function Home() {
             continues to advance, it has the potential to revolutionize
             industries and transform our daily lives.
           </p>
-          <div className=" flex  mt-24 mr-24 justify-center opacity-70 ">
+          <div className="mr-24 mt-24 flex justify-center opacity-70">
             <Image
               src="/an-ink-drawing-of-an-artificial-intelligence STAR.png"
               alt="star-L"
-              class="w-auto h-32 mt-[150px] rotate-180"
+              class="mt-[150px] h-32 w-auto rotate-180"
               width={100}
               height={100}
             />
@@ -123,21 +104,21 @@ export default function Home() {
             <Image
               src="/ink-drawing-of-an-artificial-intelligence-assistant.png"
               alt="middle-image"
-              class="w-auto h-128 object-contain"
+              class="h-128 w-auto object-contain"
               width={300}
               height={300}
             />
             <Image
               src="/an-ink-drawing-of-an-artificial-intelligence STAR.png"
               alt="star-R"
-              class="w-auto h-32 object-contain ml-5"
+              class="ml-5 h-32 w-auto object-contain"
               width={100}
               height={100}
             />
           </div>
         </div>
-        <div className="  bg-red h-[100vh] w-[1px]"></div>
-        <div className="w-[50vw] h-[100vh] p-style overflow-y-scroll scrollbar-hide  ml-auto">
+        <div className="h-[100vh] w-[1px] bg-red"></div>
+        <div className="p-style scrollbar-hide ml-auto h-[100vh] w-[50vw] overflow-y-scroll">
           <Image
             src="/temp-graphics-01.png"
             alt="star-R"
@@ -147,15 +128,15 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="bg-yellow w-full h-[2px]  "> </div>
-      <div className="bg-blue w-full h-[1px] mt-1 "> </div>
+      <div className="h-[2px] w-full bg-yellow"> </div>
+      <div className="mt-1 h-[1px] w-full bg-blue"> </div>
 
-      <div className=" w-full h-[2500px] ">
-        <div className=" w-full h-[150px] flex">
-          <p className="h3-style ml-8 mt-24 w-full  ">AR & VR</p>
+      <div className="h-[2500px] w-full">
+        <div className="flex h-[150px] w-full">
+          <p className="h3-style ml-8 mt-24 w-full">AR & VR</p>
         </div>
-        <div className=" w-full h-[300px] flex">
-          <div className="w-[50vw] h-full ">
+        <div className="flex h-[300px] w-full">
+          <div className="h-full w-[50vw]">
             <p className="p-style ml-24 mr-24 mt-24">
               <b> Augmented Reality (AR)</b> overlays digital information on the
               real world, enhancing our perception of reality. AR applications
@@ -163,7 +144,7 @@ export default function Home() {
               applications.
             </p>
           </div>
-          <div className="w-[50vw] h-full ">
+          <div className="h-full w-[50vw]">
             <p className="p-style ml-24 mr-24 mt-24">
               <b>Virtual Reality (VR)</b> immerses users in a completely digital
               environment. It requires specialized headsets that display a
@@ -172,12 +153,12 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className=" h-[1000px] flex">
-          <div className="  w-[60%] flex justify-center translate-x-[200px] translate-y-[100px] opacity-70">
+        <div className="flex h-[500px]">
+          <div className="flex w-[60%] translate-x-[200px] translate-y-[100px] justify-center opacity-70">
             <Image
               src="/drawing-of-a-planet-with-no-background.png"
               alt="planet-top-left"
-              class="w-auto h-[150px] translate-x-[100px]"
+              class="h-[150px] w-auto translate-x-[100px]"
               width={100}
               height={100}
             />
@@ -185,45 +166,122 @@ export default function Home() {
             <Image
               src="/an-ink-drawing-of-the-solar-system.png"
               alt="solar-system"
-              class="w-auto h-[450px]"
+              class="h-[450px] w-auto"
               width={200}
               height={200}
             />
             <Image
               src="/a-three-tone-drawing-of-a-woman-wearing-a-vr-headset-20164142.png"
               alt="girl-VR"
-              class="w-auto h-[375px] -translate-x-[430px] -translate-y-[10px]"
+              class="h-[375px] w-auto -translate-x-[430px] -translate-y-[10px]"
               width={300}
               height={300}
             />
             <Image
               src="/a-drawing-of-a-futuristic-spaceship- (1).png"
               alt="spaceship-top-right"
-              class="w-auto h-[200px] rotate-180 -translate-x-[450px]"
+              class="h-[200px] w-auto -translate-x-[450px] rotate-180"
               width={100}
               height={100}
             />
             <Image
               src="/drawing-of-a-planet-with-no-background (1).png"
               alt="planet-bottom-right"
-              class="w-auto h-32  -translate-x-[670px] translate-y-[270px]"
+              class="h-32 w-auto -translate-x-[670px] translate-y-[270px]"
               width={100}
               height={100}
             />
           </div>
-          <div className="  w-[40%] mt-20">
-            <p className="h8-style w-[300px] mt-20">
-              AR market: Projected to reach $198 billion by 2028, according to
-              Grand View Research.
-            </p>
-            <p className="h8-style w-[300px] mt-20">
-              VR market: Estimated to grow at a CAGR of 44.1% from 2022 to 2030,
-              according to Allied Market Research.
-            </p>
-            <p className="h8-style w-[300px] mt-20">
-              AR/VR adoption: The gaming industry is the largest adopter of
-              AR/VR technologies, followed by healthcare and education.
-            </p>
+          <div className="mt-20 w-[40%]">
+            <div className="flex">
+              <div className="h-[1px] w-2 -translate-x-[12px] translate-y-[92px] bg-red"></div>
+              <p className="h8-style mt-20 w-[300px]">
+                AR market: Projected to reach $198 billion by 2028, according to
+                Grand View Research.
+              </p>
+            </div>
+            <div className="flex">
+              <div className="h-[1px] w-2 -translate-x-[12px] translate-y-[92px] bg-red"></div>
+              <p className="h8-style mt-20 w-[300px]">
+                VR market: Estimated to grow at a CAGR of 44.1% from 2022 to
+                2030, according to Allied Market Research.
+              </p>
+            </div>
+            <div className="flex">
+              <div className="h-[1px] w-2 -translate-x-[12px] translate-y-[92px] bg-red"></div>
+              <p className="h8-style mt-20 w-[300px]">
+                AR/VR adoption: The gaming industry is the largest adopter of
+                AR/VR technologies, followed by healthcare and education.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-pattern w-full] h-[1233px] justify-center">
+          {/* progress bar */}
+          <div className="mt-80 translate-y-[670px]">
+            <div className="shadow-outline bg-grey mx-auto h-[58px] w-[800px] bg-darkGrey ring-2 ring-green">
+              <div className="m-1 h-[52px] w-[200px] translate-y-[3px] bg-green"></div>
+            </div>
+            <div className="mx-auto flex w-[804px] translate-y-1 justify-between">
+              <div className="h-2 w-[2px] bg-green"></div>
+              <div className="h-2 w-[2px] bg-green"></div>
+              <div className="h-2 w-[2px] bg-green"></div>
+              <div className="h-2 w-[2px] bg-green"></div>
+              <div className="h-2 w-[2px] bg-green"></div>
+            </div>
+            <div className="mx-auto flex w-[1000px] translate-y-2 justify-between">
+              <p className="h9-style translate-x-[90px]">AI</p>
+              <p className="h9-style translate-x-[110px]">
+                <b>AR/VR</b>
+              </p>
+              <p className="h9-style translate-x-[85px]">BLOCK CHAIN</p>
+              <p className="h9-style translate-x-[50px]">BIO-TECH</p>
+              <p className="h9-style -translate-x-[10px]">SUSTAINABLE TECH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="h-[2px] w-full bg-yellow"> </div>
+      <div className="flex w-full">
+        <div className="h-[100vh] w-[50vw]">
+          <p className="h3-style ml-8 mt-24">Block Chain</p>
+          <p className="p-style ml-24 mr-24 mt-24">
+            Blockchain is a decentralized, distributed ledger technology that
+            records transactions in a secure and transparent manner. It consists
+            of a chain of blocks, each containing a record of transactions. Once
+            a block is added to the chain, it cannot be modified, ensuring data
+            integrity and security.
+          </p>
+          <div className="mr-24 mt-24 flex justify-center opacity-70">
+            <Image
+              src="/an-ink-drawing-of-an-old-computer-clean-background-(1)-copy.png"
+              alt="robot-L"
+              class="mt-[150px] h-32 w-auto"
+              width={100}
+              height={100}
+            />
+
+            <Image
+              src="/an-ink-drawing-of-the-blockchain-copy-02.png"
+              alt="middle-image"
+              class="h-128 w-auto object-contain"
+              width={300}
+              height={300}
+            />
+            <Image
+              src="/an-ink-drawing-of-an-old-computer-clean-background-copy.png"
+              alt="robot-R"
+              class="ml-5 h-32 w-auto -translate-x-6 translate-y-40 scale-x-[-1] object-contain"
+              width={100}
+              height={100}
+            />
+          </div>
+        </div>
+        <div className="h-[100vh] w-[1px] bg-red"></div>
+        <div className="p-style scrollbar-hide ml-auto flex h-[100vh] w-[50vw] flex-col justify-center overflow-y-scroll">
+          <div className="mx-auto flex h-[20%] w-[80%] flex-col justify-center bg-black">
+            <p className="h9-style">EMERGING USE CASES</p>
+            <div className="mx-auto h-[1px] w-[100%] bg-offWhite"></div>
           </div>
         </div>
       </div>
