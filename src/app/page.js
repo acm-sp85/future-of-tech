@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="h-[7000px] bg-darkGrey">
+    <div className="h-[15000px] bg-darkGrey">
       {/* NAV BAR */}
       <nav className="sticky top-5 flex w-full">
         <div className="ml-5 flex h-8 w-[15%] items-center text-white">
@@ -277,14 +277,128 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="h-[100vh] w-[1px] bg-red"></div>
+        <div className="h-[100vh] w-[1px] bg-green"></div>
         <div className="p-style scrollbar-hide ml-auto flex h-[100vh] w-[50vw] flex-col justify-center overflow-y-scroll">
-          <div className="mx-auto flex h-[20%] w-[80%] flex-col justify-center bg-black">
-            <p className="h9-style">EMERGING USE CASES</p>
-            <div className="mx-auto h-[1px] w-[100%] bg-offWhite"></div>
+          <div className="mx-auto flex h-[80%] w-[80%] flex-col justify-center">
+            <div className="mt-16">
+              <p className="h9-style translate-y-[10px]">EMERGING USE CASES</p>
+              <div className="flex -translate-y-[70px] justify-end">
+                <div className="triangle-green -translate-x-[300px] translate-y-[74px]"></div>
+                <p className="h1regular-style">30</p>
+                <p className="h4-style translate-y-[20px]">%</p>
+              </div>
+              <div className="mx-auto h-[1px] w-[100%] -translate-y-[40px] bg-offWhite"></div>
+            </div>
+            <div className="mt-16">
+              <p className="h9-style translate-y-[10px]">FINANCIAL SERVICES</p>
+              <div className="flex -translate-y-[70px] justify-end">
+                <div className="triangle-yellow -translate-x-[350px] translate-y-[74px]"></div>
+                <p className="h1regular-style">25</p>
+                <p className="h4-style translate-y-[20px]">%</p>
+              </div>
+              <div className="mx-auto h-[1px] w-[100%] -translate-y-[40px] bg-offWhite"></div>
+            </div>
+            <div className="mt-16">
+              <p className="h9-style translate-y-[10px]">
+                SUPPLY CHAIN AND LOGISTICS
+              </p>
+              <div className="flex -translate-y-[70px] justify-end">
+                <div className="triangle-blue -translate-x-[350px] translate-y-[74px]"></div>
+                <p className="h1regular-style">25</p>
+                <p className="h4-style translate-y-[20px]">%</p>
+              </div>
+              <div className="mx-auto h-[1px] w-[100%] -translate-y-[40px] bg-offWhite"></div>
+            </div>
+            <div className="mt-16">
+              <p className="h9-style translate-y-[10px]">
+                GOVERNMENT AND PUBLIC SERVICES
+              </p>
+              <div className="flex -translate-y-[70px] justify-end">
+                <div className="triangle-red -translate-x-[400px] translate-y-[74px]"></div>
+                <p className="h1regular-style">20</p>
+                <p className="h4-style translate-y-[20px]">%</p>
+              </div>
+              <div className="mx-auto h-[1px] w-[100%] -translate-y-[40px] bg-offWhite"></div>
+            </div>
           </div>
         </div>
       </div>
+      <div className="h-[3px] w-full bg-yellow"> </div>
+      <div className="mt-2 h-[2px] w-full bg-green"> </div>
+      <div className="mt-3 h-[1px] w-full bg-red"> </div>
+      <div className="mt-4 h-[1px] w-full bg-blue"> </div>
+      <div className="mx-auto flex h-[100vh] w-[60%] flex-col justify-center">
+        <p className="h6-style">
+          It’s a game-changer. It's revolutionizing the way we think about
+          medicine, agriculture, and even energy. But with great power comes
+          great responsibility. We must ensure that biotechnology is used
+          ethically and sustainably.{" "}
+        </p>
+        <p className="p-style flex justify-end">Bill Gates</p>
+      </div>
+      <div className="h-[1px] w-full bg-yellow"> </div>
+      <div className="flex w-full">
+        <div className="h-[100vh] w-[50vw]">
+          <p className="h3-style ml-8 mt-24">Biotechnology</p>
+          <p className="p-style ml-24 mr-24 mt-24">
+            Biotechnology is the application of biological processes to solve
+            problems and create new products. It involves the use of living
+            organisms or their parts to develop products such as medicines,
+            vaccines, and genetically modified organisms. Biotechnology has a
+            wide range of applications in fields like healthcare, agriculture,
+            and environmental science.
+          </p>
+          <div className="mr-24 mt-24 flex justify-center opacity-70">
+            <Image
+              src="/ink-drawing-of-biotechnology.png"
+              alt="robot-L"
+              class="mt-[150px] h-32 w-auto -translate-y-[150px]"
+              width={100}
+              height={100}
+            />
+
+            <Image
+              src="/ink-drawing-of-a-microscope.png"
+              alt="middle-image"
+              class="h-64 w-auto object-contain"
+              width={300}
+              height={300}
+            />
+            <Image
+              src="/a-three-tone-drawing-of-a-dna-sequence-.png"
+              alt="robot-R"
+              class="ml-5 h-[150px] w-auto -translate-x-[60px] translate-y-40 rotate-90 scale-x-[-1] object-contain"
+              width={100}
+              height={100}
+            />
+          </div>
+        </div>
+        <div className="h-[100vh] w-[1px] bg-red"></div>
+        <div className="p-style scrollbar-hide ml-auto h-[100vh] w-[50%] justify-center overflow-y-scroll">
+          <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] items-end rounded-3xl ring-2 ring-blue">
+            <p className="h4-style mb-[50px] ml-12 w-[80%] leading-[80px]">
+              Projected to reach $842.8 billion by 2028
+            </p>
+          </div>
+          <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] flex-col rounded-3xl ring-2 ring-blue">
+            <p className="h4-style -mb-[300px] ml-12 mt-auto w-[80%] leading-[80px]">
+              Gene editing: CRISPR to grow
+            </p>
+            <p className="hx-style mb-[100px] ml-12 mt-auto leading-[80px]">
+              21.7%
+            </p>
+          </div>
+
+          <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] items-end rounded-3xl ring-2 ring-blue">
+            {" "}
+            <p className="h4-style mb-[50px] ml-12 w-[80%] leading-[80px]">
+              The personalized medicine market is estimated to reach $252
+              billion by 2027
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="h-[1px] w-full bg-green"> </div>
     </div>
   );
 }
