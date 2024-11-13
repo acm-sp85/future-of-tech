@@ -390,7 +390,6 @@ export default function Home() {
           </div>
 
           <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] items-end rounded-3xl ring-2 ring-blue">
-            {" "}
             <p className="h4-style mb-[50px] ml-12 w-[80%] leading-[80px]">
               The personalized medicine market is estimated to reach $252
               billion by 2027
@@ -399,6 +398,10 @@ export default function Home() {
         </div>
       </div>
       <div className="h-[1px] w-full bg-green"> </div>
+
+      <div className="dot-pattern w-full] flex h-[1233px] flex-col justify-center">
+        <div className="shadow-outline mx-auto mt-1 flex h-[33%] w-[55%] rounded-3xl bg-background ring-2 ring-green"></div>
+      </div>
     </div>
   );
 }

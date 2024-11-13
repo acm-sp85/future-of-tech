@@ -29,13 +29,63 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 
- 
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+   .grid-pattern {
+  background-image: 
+    linear-gradient(0deg, transparent 95%, #CD320C 5%),
+    linear-gradient(90deg, transparent 95%, #CD320C 5%);
+  background-size: 40px 40px;
 }
 
+
+
+
+
+.dot-pattern {
+  background-image: radial-gradient(#33FF99 1px, transparent 1px);
+  background-size: 20px 20px;
+  }
+  
+  .triangle-blue {
+    width: 0;
+    height: 0;
+    
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 25px solid #67AADE;
+  }
+  .triangle-green {
+    width: 0;
+    height: 0;
+    
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 25px solid #2B7723;
+  }
+  .triangle-yellow {
+    width: 0;
+    height: 0;
+    
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 25px solid #F69425;
+  }
+  .triangle-red {
+    width: 0;
+    height: 0;
+    
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 25px solid #CD320C;
+  }
+  
+  
+}
 @layer base {
   .hx-style {
 
@@ -77,49 +127,4 @@ body {
   .p-style {
     @apply font-jura  text-xl text-offWhite leading-[40px];
   }
-}
-
-    .grid-pattern {
-      background-image: linear-gradient(0deg, transparent 99%, #CD320C 95%), /* Horizontal lines */
-                        linear-gradient(90deg, transparent 99%, #CD320C 95%); /* Vertical lines */
-
-                        
-      background-size: 40px 40px; /* Adjust grid cell size */
-    }
-
-
-  .triangle-blue {
-    width: 0;
-    height: 0;
-
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 25px solid #67AADE;
-  }
-  .triangle-green {
-    width: 0;
-    height: 0;
-
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 25px solid #2B7723;
-  }
-  .triangle-yellow {
-    width: 0;
-    height: 0;
-
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 25px solid #F69425;
-  }
-  .triangle-red {
-    width: 0;
-    height: 0;
-
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 25px solid #CD320C;
-  }
-
-
 }
