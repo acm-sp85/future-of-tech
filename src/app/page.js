@@ -1,4 +1,7 @@
-import Image from 'next/image';
+"use client";
+import Image from "next/image";
+import PieChart from "./PieChart";
+import Chart from "./Chart";
 
 export default function Home() {
   return (
@@ -43,9 +46,9 @@ export default function Home() {
           </div>
         </div>
         <div className="mr-5 flex w-[15%] justify-end">
-          <span className="h11-style flex h-8 items-center justify-center rounded-2xl bg-red px-5">
+          <button className="h11-style flex h-8 items-center justify-center rounded-2xl bg-red px-5">
             Download The Report
-          </span>
+          </button>
         </div>
       </nav>
       {/* LANDING IMAGES */}
@@ -132,15 +135,24 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="h-[100vh] w-[1px] bg-red"></div>
+        <div className="h-[100vh] w-[1px]"></div>
         <div className="p-style scrollbar-hide ml-auto h-[100vh] w-[50vw] overflow-y-scroll">
-          <Image
-            src="/temp-graphics-01.png"
-            alt="star-R"
-            class="w-auto object-contain"
-            width={10000}
-            height={10000}
-          />
+          <div className="mx-auto h-[100%] w-[60%] items-center justify-center opacity-70">
+            <div className="h-[56%] rounded-lg p-8">
+              <PieChart />
+            </div>
+            <p className="h11-style text-center">
+              87% of organizations are currently using AI or exploring its
+              applications, according to McKinsey.
+            </p>
+            <div className="mt-40 h-[46%] rounded-lg p-8">
+              <Chart />
+            </div>
+            <p className="h11-style text-center">
+              Projected to reach $1,597.5 billion by 2030, according to
+              MarketsandMarkets.
+            </p>
+          </div>
         </div>
       </div>
       <div className="h-[2px] w-full bg-yellow"> </div>
