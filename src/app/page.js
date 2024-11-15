@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="h-[15000px] bg-darkGrey">
+    <div className="bg-darkGrey">
       {/* NAV BAR */}
       <nav className="sticky top-5 flex w-full">
         <div className="ml-5 flex h-8 w-[15%] items-center text-white">
@@ -10,21 +10,36 @@ export default function Home() {
         </div>
         <div className="justify-left flex h-8 w-[70%] items-center">
           <div className="flex items-center justify-between">
-            <span className="h8-style flex w-44 items-center justify-center">
+            <a
+              className="h8-style flex w-44 items-center justify-center"
+              href="#ai"
+            >
               Artificial Intelligence
-            </span>
-            <span className="h8-style flex w-44 items-center justify-center">
+            </a>
+            <a
+              className="h8-style flex w-44 items-center justify-center"
+              href="#ar"
+            >
               AR & VR
-            </span>
-            <span className="h8-style flex w-44 items-center justify-center">
+            </a>
+            <a
+              className="h8-style flex w-44 items-center justify-center"
+              href="#block-chain"
+            >
               Block Chain
-            </span>
-            <span className="h8-style flex w-44 items-center justify-center">
+            </a>
+            <a
+              className="h8-style flex w-44 items-center justify-center"
+              href="#bio-tech"
+            >
               Bio-Tech
-            </span>
-            <span className="h8-style flex w-44 items-center justify-center">
+            </a>
+            <a
+              className="h8-style flex w-44 items-center justify-center"
+              href="#sustainable"
+            >
               Sustainable Tech
-            </span>
+            </a>
           </div>
         </div>
         <div className="mr-5 flex w-[15%] justify-end">
@@ -79,7 +94,7 @@ export default function Home() {
         <p className="h2-style -mt-5 mb-[-15px] ml-8">Cutting-Edge Tech</p>
       </div>
       <div className="flex h-[1px] w-full bg-yellow"> </div>
-      <div className="flex w-full">
+      <div className="flex w-full" id="ai">
         <div className="h-[100vh] w-[50vw]">
           <p className="h3-style ml-8 mt-24">Artificial Intelligence (AI)</p>
           <p className="p-style ml-24 mr-24 mt-24">
@@ -131,7 +146,7 @@ export default function Home() {
       <div className="h-[2px] w-full bg-yellow"> </div>
       <div className="mt-1 h-[1px] w-full bg-blue"> </div>
 
-      <div className="h-[2500px] w-full">
+      <div className="h-[2500px] w-full" id="ar">
         <div className="flex h-[150px] w-full">
           <p className="h3-style ml-8 mt-24 w-full">AR & VR</p>
         </div>
@@ -242,7 +257,7 @@ export default function Home() {
         </div>
       </div>
       <div className="h-[2px] w-full bg-yellow"> </div>
-      <div className="flex w-full">
+      <div className="flex w-full" id="block-chain">
         <div className="h-[100vh] w-[50vw]">
           <p className="h3-style ml-8 mt-24">Block Chain</p>
           <p className="p-style ml-24 mr-24 mt-24">
@@ -328,7 +343,7 @@ export default function Home() {
       <div className="mt-3 h-[1px] w-full bg-red"> </div>
       <div className="mt-4 h-[1px] w-full bg-blue"> </div>
       <div className="mx-auto flex h-[100vh] w-[60%] flex-col justify-center">
-        <p className="h6-style">
+        <p className="h6-style m-10">
           It’s a game-changer. It's revolutionizing the way we think about
           medicine, agriculture, and even energy. But with great power comes
           great responsibility. We must ensure that biotechnology is used
@@ -337,7 +352,7 @@ export default function Home() {
         <p className="p-style flex justify-end">Bill Gates</p>
       </div>
       <div className="h-[1px] w-full bg-yellow"> </div>
-      <div className="flex w-full">
+      <div className="flex w-full snap-center" id="bio-tech">
         <div className="h-[100vh] w-[50vw]">
           <p className="h3-style ml-8 mt-24">Biotechnology</p>
           <p className="p-style ml-24 mr-24 mt-24">
@@ -374,13 +389,13 @@ export default function Home() {
           </div>
         </div>
         <div className="h-[100vh] w-[1px] bg-red"></div>
-        <div className="p-style scrollbar-hide ml-auto h-[100vh] w-[50%] justify-center overflow-y-scroll">
-          <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] items-end rounded-3xl ring-2 ring-blue">
+        <div className="p-style scrollbar-hide ml-auto h-[100vh] w-[50%] snap-y justify-center overflow-y-scroll">
+          <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] snap-center items-end rounded-3xl ring-2 ring-blue">
             <p className="h4-style mb-[50px] ml-12 w-[80%] leading-[80px]">
               Projected to reach $842.8 billion by 2028
             </p>
           </div>
-          <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] flex-col rounded-3xl ring-2 ring-blue">
+          <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] snap-center flex-col rounded-3xl ring-2 ring-blue">
             <p className="h4-style -mb-[300px] ml-12 mt-auto w-[80%] leading-[80px]">
               Gene editing: CRISPR to grow
             </p>
@@ -389,10 +404,10 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] items-end rounded-3xl ring-2 ring-blue">
+          <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] snap-center items-end rounded-3xl ring-2 ring-blue">
             <p className="h4-style mb-[50px] ml-12 w-[80%] leading-[80px]">
               The personalized medicine market is estimated to reach $252
-              billion by 2027
+              billion by 2027{" "}
             </p>
           </div>
         </div>
@@ -400,7 +415,155 @@ export default function Home() {
       <div className="h-[1px] w-full bg-green"> </div>
 
       <div className="dot-pattern w-full] flex h-[1233px] flex-col justify-center">
-        <div className="shadow-outline mx-auto mt-1 flex h-[33%] w-[55%] rounded-3xl bg-background ring-2 ring-green"></div>
+        <div className="shadow-outline mx-auto flex h-[33%] w-[55%] items-center rounded-3xl bg-background ring-2 ring-green">
+          <p className="h3-style mx-auto w-[40%] text-center">
+            Sustainable Technology
+          </p>
+        </div>
+      </div>
+      <div className="flex w-full" id="sustainable">
+        <div className="h-[100vh] w-[50vw]">
+          <p className="h3-style ml-8 mt-24"> Sustainable Technology</p>
+          <p className="p-style ml-24 mr-24 mt-24">
+            Sustainable Technology refers to the development and application of
+            technologies that minimize environmental impact and promote
+            sustainability. These technologies aim to address global challenges
+            such as climate change, resource depletion, and pollution while
+            meeting human needs and improving quality of life.
+          </p>
+          <div className="mr-24 mt-24 flex justify-center opacity-70">
+            <Image
+              src="/a-drawing-of-a-solar-pannel.png"
+              alt="robot-L"
+              class="mt-[150px] h-32 w-auto translate-y-[5px]"
+              width={100}
+              height={100}
+            />
+
+            <Image
+              src="/a-drawing-of-a-wind-turbine-.png"
+              alt="middle-image"
+              class="h-120 w-auto -translate-y-[75px] object-contain"
+              width={300}
+              height={300}
+            />
+          </div>
+        </div>
+        <div className="h-[100vh] w-[1px] bg-green"></div>
+        {/* GRID */}
+        <div className="scrollbar-hide m-6 grid h-[100vh] w-[50%] grid-cols-2 gap-4 overflow-y-scroll p-2">
+          <div className="h-[80%] w-[100%]">
+            <div className="relative mx-auto h-[490px] w-[100%]">
+              <div className="shadow-outline mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-blue">
+                <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-blue"></div>
+                <p className="h6-style m-10">
+                  <u>Energy efficiency:</u> Technologies that reduce energy
+                  consumption, such as LED lighting and smart appliances.
+                </p>
+              </div>
+            </div>
+            <div className="relative mx-auto mt-[19px] h-[490px] w-[100%]">
+              <div className="shadow-outline mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-red">
+                <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-red"></div>
+                <p className="h6-style m-10">
+                  <u>Electric vehicles:</u> Vehicles powered by electricity
+                  rather than fossil fuels.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="h-[1000px] w-[100%]">
+            <div className="shadow-outline relative mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-yellow">
+              <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-yellow"></div>
+              <p className="h6-style m-10">
+                <u>Renewable energy:</u> its sources are derived from natural
+                processes that are constantly replenished, making them a
+                sustainable alternative to fossil fuels. These sources include:
+                Solar, wind, hydro, geothermal, and biomass power.
+              </p>
+            </div>
+          </div>
+          <div className="relative col-span-2 h-[300px] w-[100%]">
+            <div className="shadow-outline mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-green">
+              <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-green"></div>
+              <p className="h6-style m-10">
+                <u>Sustainable materials:</u> Biodegradable materials, recycled
+                materials, and materials with low environmental impact.
+              </p>
+            </div>
+          </div>
+
+          <div className="relative col-span-1 mx-auto h-[600px] w-[100%]">
+            <div className="shadow-outline mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-yellow">
+              <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-yellow"></div>
+              <p className="h6-style m-10">
+                <u>Waste reduction and recycling:</u> Technologies that minimize
+                waste generation and maximize recycling efforts.
+              </p>
+            </div>
+          </div>
+          <div className="relative col-span-1 mx-auto h-[600px] w-[100%]">
+            <div className="shadow-outline relative mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-blue">
+              <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-blue"></div>
+              <p className="h6-style m-10">
+                <u>Water conservation:</u> Technologies that reduce water
+                consumption and pollution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="h-[1px] w-[100vw] bg-blue"></div>
+      <div className="bottom-0 items-end">
+        <div className="mt-[20px] flex h-8 w-[100%] justify-center">
+          <div className="flex items-center justify-between">
+            <a
+              className="h8-style flex w-80 items-center justify-center"
+              href="#ai"
+            >
+              Artificial Intelligence
+            </a>
+            <a
+              className="h8-style flex w-80 items-center justify-center"
+              href="#ar"
+            >
+              AR & VR
+            </a>
+            <a
+              className="h8-style flex w-80 items-center justify-center"
+              href="#block-chain"
+            >
+              Block Chain
+            </a>
+            <a
+              className="h8-style flex w-80 items-center justify-center"
+              href="#bio-tech"
+            >
+              Bio-Tech
+            </a>
+            <a
+              className="h8-style flex w-80 items-center justify-center"
+              href="#sustainable"
+            >
+              Sustainable Tech
+            </a>
+          </div>
+        </div>
+        <div className="mx-auto mt-[30px] flex h-8 w-[15%] items-center justify-center">
+          <Image src="/logo.png" alt="Logo" width={150} height={150} />
+        </div>
+        <p className="h11-style mx-auto mt-[20px] w-[50%] justify-center text-center">
+          Disclaimer: This website is a portfolio project created to showcase
+          skills and knowledge in web development. While it has been hard coded
+          by a human, Alex Contell, the content has been generated using
+          artificial intelligence tools and may not be entirely original or
+          comprehensive. While we have strived to ensure the accuracy and
+          reliability of the information presented, it is important to verify
+          the content from other sources before making any decisions or taking
+          any actions based on it. This website is not intended to provide
+          professional advice or recommendations. If you require expert guidance
+          or assistance, please consult with a qualified professional.
+        </p>
       </div>
     </div>
   );
