@@ -7,43 +7,26 @@ export default function Home() {
   return (
     <div className="bg-darkGrey">
       {/* NAV BAR */}
-      <nav className="sticky top-5 flex w-full">
+      <nav className="sticky top-5 z-50 flex w-full">
         <div className="ml-5 flex h-8 w-[15%] items-center text-white">
           <Image src="/logo.png" alt="Logo" width={150} height={150} />
         </div>
-        <div className="justify-left flex h-8 w-[70%] items-center">
-          <div className="flex items-center justify-between">
-            <a
-              className="h8-style flex w-44 items-center justify-center"
-              href="#ai"
-            >
-              Artificial Intelligence
-            </a>
-            <a
-              className="h8-style flex w-44 items-center justify-center"
-              href="#ar"
-            >
-              AR & VR
-            </a>
-            <a
-              className="h8-style flex w-44 items-center justify-center"
-              href="#block-chain"
-            >
-              Block Chain
-            </a>
-            <a
-              className="h8-style flex w-44 items-center justify-center"
-              href="#bio-tech"
-            >
-              Bio-Tech
-            </a>
-            <a
-              className="h8-style flex w-44 items-center justify-center"
-              href="#sustainable"
-            >
-              Sustainable Tech
-            </a>
-          </div>
+        <div className="justify-left flex h-8 w-[70%] items-center justify-between">
+          <a className="h8-style" href="#ai">
+            Artificial Intelligence
+          </a>
+          <a className="h8-style" href="#ar">
+            AR & VR
+          </a>
+          <a className="h8-style" href="#block-chain">
+            Block Chain
+          </a>
+          <a className="h8-style" href="#bio-tech">
+            Bio-Tech
+          </a>
+          <a className="h8-style" href="#sustainable">
+            Sustainable Tech
+          </a>
         </div>
         <div className="mr-5 flex w-[15%] justify-end">
           <button className="h11-style flex h-8 items-center justify-center rounded-2xl bg-red px-5">
@@ -51,6 +34,7 @@ export default function Home() {
           </button>
         </div>
       </nav>
+
       {/* LANDING IMAGES */}
       <div className="-mt-10 flex h-[60vh] w-full items-end justify-center">
         <div className="mb-10 flex h-[30vh] w-[50vw] items-end justify-center opacity-80">
@@ -527,39 +511,22 @@ export default function Home() {
       </div>
       <div className="h-[1px] w-[100vw] bg-blue"></div>
       <div className="bottom-0 items-end">
-        <div className="mt-[20px] flex h-8 w-[100%] justify-center">
-          <div className="flex items-center justify-between">
-            <a
-              className="h8-style flex w-80 items-center justify-center"
-              href="#ai"
-            >
-              Artificial Intelligence
-            </a>
-            <a
-              className="h8-style flex w-80 items-center justify-center"
-              href="#ar"
-            >
-              AR & VR
-            </a>
-            <a
-              className="h8-style flex w-80 items-center justify-center"
-              href="#block-chain"
-            >
-              Block Chain
-            </a>
-            <a
-              className="h8-style flex w-80 items-center justify-center"
-              href="#bio-tech"
-            >
-              Bio-Tech
-            </a>
-            <a
-              className="h8-style flex w-80 items-center justify-center"
-              href="#sustainable"
-            >
-              Sustainable Tech
-            </a>
-          </div>
+        <div className="justify-left mx-auto mt-[20px] flex h-8 w-[70%] items-center justify-between">
+          <a className="h8-style" href="#ai">
+            Artificial Intelligence
+          </a>
+          <a className="h8-style" href="#ar">
+            AR & VR
+          </a>
+          <a className="h8-style" href="#block-chain">
+            Block Chain
+          </a>
+          <a className="h8-style" href="#bio-tech">
+            Bio-Tech
+          </a>
+          <a className="h8-style" href="#sustainable">
+            Sustainable Tech
+          </a>
         </div>
         <div className="mx-auto mt-[30px] flex h-8 w-[15%] items-center justify-center">
           <Image src="/logo.png" alt="Logo" width={150} height={150} />
