@@ -1,8 +1,47 @@
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
-const navBar = () => {
+const NavBar = () => {
+  const [modal, setModal] = useState(false);
+
+  const triggerModal = () => {
+    setModal(!modal);
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setModal(false); // Close modal when Esc is pressed
+      }
+    };
+
+    // Add event listener when component mounts
+    document.addEventListener("keydown", handleKeyDown);
+
+    // Clean up event listener when component unmounts
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   return (
     <div className="w-full">
+      {modal && (
+        <div className="modal z-0">
+          <p className="h6-style w-[30vw]">
+            Thank you for your interest in The Report, this is just a sample
+            website designed as an exercise by Alex Contell. If you want to
+            learn more about his work, please visit <br />
+            <a
+              href="http://www.alexcontell.dev "
+              target="_blank"
+              className="text-red"
+            >
+              www.alexcontell.dev
+            </a>
+          </p>
+        </div>
+      )}
       <nav className="mt-4 flex">
         <div className="ml-5 flex h-8 w-[15%] items-center text-white">
           <a href="#">
@@ -27,7 +66,10 @@ const navBar = () => {
           </a>
         </div>
         <div className="mr-5 flex w-[15%] justify-end">
-          <button className="h11-style flex h-8 items-center justify-center rounded-2xl bg-red px-5">
+          <button
+            className="h11-style flex h-8 items-center justify-center rounded-2xl bg-red px-5"
+            onClick={triggerModal}
+          >
             Download The Report
           </button>
         </div>
@@ -36,4 +78,4 @@ const navBar = () => {
   );
 };
 
-export default navBar;
+export default NavBar;

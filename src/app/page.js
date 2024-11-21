@@ -26,7 +26,7 @@ export default function Home() {
       <LandingImages />
       <TheFutureOfTechnology />
       <GlobalImpact />
-      <div className="flex h-[1px] w-full bg-yellow"> </div>
+      {/*<div className="flex h-[1px] w-full bg-yellow"> </div>
       <ArtificialIntelligence />
       <div className="h-[2px] w-full bg-yellow"> </div>
       <div className="mt-1 h-[1px] w-full bg-blue"> </div>
@@ -44,7 +44,7 @@ export default function Home() {
       <SustainableTechLanding />
       <SustainableTech />
       <div className="h-[1px] w-[100vw] bg-blue"></div>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

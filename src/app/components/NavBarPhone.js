@@ -20,20 +20,33 @@ const NavBarPhone = () => {
     <div className="flex">
       {showMenu && (
         <div className={"modal z-0"}>
-          <h1 className="text-white">
-            HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA{" "}
-            HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA{" "}
-            HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA{" "}
-            HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA{" "}
-            HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA{" "}
-            HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA HOLA{" "}
-            HOLA{" "}
-          </h1>
-          {/* <ul>
-            <li className="h3-style">1</li>
-            <li className="h3-style">2</li>
-            <li className="h3-style">3</li>
-          </ul> */}
+          <ul>
+            <li className="">
+              <a className="h8-style" href="#ai">
+                Artificial Intelligence
+              </a>
+            </li>
+            <li className="">
+              <a className="h8-style" href="#ar">
+                AR & VR
+              </a>
+            </li>
+            <li className="">
+              <a className="h8-style" href="#block-chain">
+                Block Chain
+              </a>
+            </li>
+            <li className="">
+              <a className="h8-style" href="#bio-tech">
+                Bio-Tech
+              </a>
+            </li>
+            <li className="">
+              <a className="h8-style" href="#sustainable">
+                Sustainable Tech
+              </a>
+            </li>
+          </ul>
         </div>
       )}
       <HamburgerMenu
@@ -52,21 +65,8 @@ const NavBarPhone = () => {
 
     // <div className="flex w-full items-center justify-center">
     //   <nav className="sticky top-0 z-50 flex w-full flex-col items-center xl:hidden">
-    //     <a className="h8-style" href="#ai">
-    //       Artificial Intelligence
-    //     </a>
-    //     <a className="h8-style" href="#ar">
-    //       AR & VR
-    //     </a>
-    //     <a className="h8-style" href="#block-chain">
-    //       Block Chain
-    //     </a>
-    //     <a className="h8-style" href="#bio-tech">
-    //       Bio-Tech
-    //     </a>
-    //     <a className="h8-style" href="#sustainable">
-    //       Sustainable Tech
-    //     </a>
+    //
+
     //   </nav>
     // </div>
   );
