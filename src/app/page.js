@@ -16,22 +16,29 @@ export default function Home() {
   return (
     <div className="bg-darkGrey">
       {/* NAV BAR */}
-      <div className="sticky top-0 z-50 hidden w-full lg:flex">
+      <div className="sticky top-0 z-50 hidden w-[100vw] lg:flex">
         <NavBar />
       </div>
       {/* NAV BAR FOR PHONES*/}
-      <div className="sticky right-0 top-0 z-50 flex w-full lg:hidden">
+      <div className="sticky right-0 top-0 z-50 flex w-[100vw] lg:hidden">
         <NavBarPhone />
       </div>
-      <LandingImages />
-      <TheFutureOfTechnology />
-      <GlobalImpact />
-      {/*<div className="flex h-[1px] w-full bg-yellow"> </div>
-      <ArtificialIntelligence />
-      <div className="h-[2px] w-full bg-yellow"> </div>
+      <div className="h-[100vh]">
+        <LandingImages />
+        <TheFutureOfTechnology />
+      </div>
+
+      <div className="hidden md:flex">
+        <GlobalImpact />
+      </div>
+      <div className="flex h-[1px] w-full bg-yellow"> </div>
+      <div>
+        <ArtificialIntelligence />
+      </div>
+      {/* <div className="h-[2px] w-full bg-yellow"> </div>
       <div className="mt-1 h-[1px] w-full bg-blue"> </div>
       <ArVr />
-      <div className="h-[2px] w-full bg-yellow"> </div>
+    <div className="h-[2px] w-full bg-yellow"> </div>
       <BlockChain />
       <div className="h-[3px] w-full bg-yellow"> </div>
       <div className="mt-2 h-[2px] w-full bg-green"> </div>

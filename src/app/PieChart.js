@@ -46,7 +46,8 @@ const PieChart = () => {
   };
 
   return (
-    <div className="mt-20 flex h-[500px] w-[500px] items-center justify-center">
+    // <div className="flex h-[50vh] w-[100vw] items-center justify-center md:w-full">
+    <div className="flex h-[50vh] w-[100vw] items-center justify-center p-5 md:w-full md:p-0 lg:h-[40vh]">
       <Pie data={data} options={options} />
     </div>
   );

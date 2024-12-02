@@ -108,8 +108,7 @@ const BarChart = () => {
   };
 
   return (
-    <div className="flex h-[500px] w-full items-center justify-center">
-      {/* Tailwind classes for styling */}
+    <div className="flex w-full items-center justify-center p-5 md:p-0 lg:h-[40vh]">
       <Bar data={data} options={options} />
     </div>
   );
