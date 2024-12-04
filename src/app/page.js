@@ -15,13 +15,11 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <div className="bg-darkGrey">
-      <div className="sticky top-0 z-50 hidden w-[100vw] lg:flex" /* NAV BAR */>
+      <div className="sticky top-0 z-50 hidden w-[100vw] lg:flex">
         <NavBar />
       </div>
 
-      <div
-        className="sticky right-0 top-0 z-50 flex w-[100vw] lg:hidden" /* NAV BAR FOR PHONES*/
-      >
+      <div className="sticky right-0 top-0 z-50 flex w-[100vw] lg:hidden">
         <NavBarPhone />
       </div>
       <div className="h-[100vh]">

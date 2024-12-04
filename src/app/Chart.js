@@ -8,17 +8,17 @@ import {
   Legend,
 } from "chart.js";
 
-// Register the necessary components
+
 Chart.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 const BarChart = () => {
-  // Data configuration for the bar chart
+
   const data = {
     labels: ["2025", "2026", "2027", "2028", "2029", "2030"],
     datasets: [
       {
         label: "Market Cap in Billions USD)",
-        data: [0.1, 0.5, 0.8, 1, 1.2, 1.6], // Values for each bar
+        data: [0.1, 0.5, 0.8, 1, 1.2, 1.6], 
         backgroundColor: [
           "#282828",
           "#282828",
@@ -27,7 +27,7 @@ const BarChart = () => {
           "#282828",
           "#282828",
           "#282828",
-        ], // Color for each bar
+        ], 
         borderColor: [
           "#67AADE",
           "#67AADE",
@@ -35,13 +35,13 @@ const BarChart = () => {
           "#67AADE",
           "#67AADE",
           "#67AADE",
-        ], // Border color for each bar
-        borderWidth: 1, // Border width of each bar
+        ], 
+        borderWidth: 1,
       },
     ],
   };
 
-  // Configuration options for the chart
+  
   const options = {
     responsive: true,
     maintainAspectRatio: false,
@@ -50,10 +50,10 @@ const BarChart = () => {
       legend: {
         position: "bottom",
         labels: {
-          color: "#F3E3C1", // Custom color for legend text
+          color: "#F3E3C1", 
           font: {
-            size: 14, // Font size for legend text (optional)
-            family: "Arial", // Font family for legend text (optional)
+            size: 14, 
+            family: "Arial", 
           },
         },
       },
@@ -61,15 +61,15 @@ const BarChart = () => {
     scales: {
       x: {
         ticks: {
-          color: "#F3E3C1", // Blue color for X-axis tick labels
+          color: "#F3E3C1", 
           font: {
-            size: 14, // Font size for X-axis tick labels
-            family: "Arial", // Font family for X-axis tick labels
+            size: 14, 
+            family: "Arial", 
           },
         },
         grid: {
           display: false,
-          color: "#2B7723", // Grid line color
+          color: "#2B7723", 
         },
         beginAtZero: true,
         title: {
@@ -77,23 +77,23 @@ const BarChart = () => {
           text: "Month",
         },
         border: {
-          color: "#2B7723", // Red color for the x-axis border line
+          color: "#2B7723", 
         },
       },
       y: {
         ticks: {
-          color: "#F3E3C1", // Blue color for X-axis tick labels
+          color: "#F3E3C1", 
           font: {
-            size: 14, // Font size for X-axis tick labels
-            family: "Arial", // Font family for X-axis tick labels
+            size: 14, 
+            family: "Arial", 
           },
         },
         grid: {
           display: false,
-          color: "#2B7723", // Grid line color
+          color: "#2B7723", 
         },
         border: {
-          color: "#2B7723", // Red color for the x-axis border line
+          color: "#2B7723", 
         },
         beginAtZero: true,
         title: {
@@ -103,8 +103,8 @@ const BarChart = () => {
       },
     },
     animation: {
-      duration: 2000, // Duration of the animation in milliseconds
-      easing: "easeInOutCubic", // Easing function for the animation
+      duration: 2000,
+      easing: "easeInOutCubic",
     },
   };
 

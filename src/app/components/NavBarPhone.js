@@ -62,13 +62,6 @@ const NavBarPhone = () => {
         animationDuration={0.5}
       />
     </div>
-
-    // <div className="flex w-full items-center justify-center">
-    //   <nav className="sticky top-0 z-50 flex w-full flex-col items-center xl:hidden">
-    //
-
-    //   </nav>
-    // </div>
   );
 };
 

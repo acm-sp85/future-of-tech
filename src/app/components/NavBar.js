@@ -11,14 +11,14 @@ const NavBar = () => {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
-        setModal(false); // Close modal when Esc is pressed
+        setModal(false);
       }
     };
 
-    // Add event listener when component mounts
+
     document.addEventListener("keydown", handleKeyDown);
 
-    // Clean up event listener when component unmounts
+
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
