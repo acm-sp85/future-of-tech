@@ -31,8 +31,10 @@ function SustainableTech() {
         </div>
       </div>
       <div className="h-[100vh] w-[1px] bg-green"></div>
-      {/* GRID */}
-      <div className="scrollbar-hide m-6 grid h-[100vh] w-[50%] grid-cols-2 gap-4 overflow-y-scroll p-2">
+
+      <div
+        className="scrollbar-hide m-6 grid h-[100vh] w-[50%] grid-cols-2 gap-4 overflow-y-scroll p-2" /* GRID */
+      >
         <div className="h-[80%] w-[100%]">
           <div className="relative mx-auto h-[490px] w-[100%]">
             <div className="shadow-outline mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-blue">

@@ -45,7 +45,7 @@ function ArtificialIntelligence() {
           />
         </div>
       </div>
-      {/* <div className="h-[100vh] w-[1px] bg-red"></div> */}
+      
       <div className="scrollbar-hide mt-[100px] md:w-[50vw] lg:overflow-y-scroll">
         <div className="mx-auto flex w-full flex-col items-center justify-center opacity-70 md:w-[80%] lg:w-[50%]">
           <div className="flex h-[50vh] w-full justify-center md:h-[56%]">
