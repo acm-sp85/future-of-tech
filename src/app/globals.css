@@ -40,6 +40,7 @@ body {
     linear-gradient(0deg, transparent 95%, #CD320C 5%),
     linear-gradient(90deg, transparent 95%, #CD320C 5%);
   background-size: 40px 40px;
+  opacity: 0.7;
 }
 
 
@@ -104,7 +105,30 @@ body {
     border-right: 20px solid transparent;
     border-bottom: 25px solid #CD320C;
   }
+
+  @media (max-width: 767px) {
+  li::before {
+    display: none; /* Hide the bullets on small screens */
+  }
+}
   
+li {
+  position: relative; /* This is needed to position the custom bullet */
+  padding-left: 2rem; /* Ensure there is space for the custom bullet */
+  margin-bottom: 0rem;
+}
+
+li::before {
+  content: '';
+  position: absolute;
+  left: 0; /* Position it at the left of the li */
+  top: 15%; /* Center it vertically */
+  width: 7px; /* Set the width of the bullet */
+  height: 1px; /* Set the height of the bullet */
+  background-color: #CD320C; /* Set the bullet color */
+}
+
+
   
 }
 @layer base {
@@ -123,7 +147,7 @@ body {
     @apply font-inter lg:text-96 md:text-70 sm:text-16 font-bold text-offWhite;
   }
   .h3-style {
-    @apply font-italiana lg:text-70 md:text-64 sm:text-16  text-offWhite;
+    @apply font-italiana lg:text-70 md:text-64 sm:text-48  text-offWhite;
   }
   .h4-style {
     @apply font-italiana lg:text-64 md:text-32 sm:text-12  text-offWhite;
@@ -147,6 +171,6 @@ body {
     @apply font-inter text-12  text-offWhite;
   }
   .p-style {
-    @apply font-jura  text-12 lg:text-16 text-offWhite leading-[40px];
+    @apply font-jura  text-12 lg:text-20 text-offWhite md:leading-[40px] leading-[25px];
   }
 }

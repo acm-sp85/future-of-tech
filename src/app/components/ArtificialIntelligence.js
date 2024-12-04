@@ -5,7 +5,7 @@ import Chart from "../Chart";
 function ArtificialIntelligence() {
   return (
     <div
-      className="grid h-[100vh] w-[100vw] grid-cols-1 md:grid-cols-2"
+      className="grid h-auto w-[100vw] grid-cols-1 md:h-[100vh] md:grid-cols-2"
       id="ai"
     >
       <div className="md:h-[100vh] md:w-[50vw]">
@@ -46,12 +46,12 @@ function ArtificialIntelligence() {
         </div>
       </div>
       {/* <div className="h-[100vh] w-[1px] bg-red"></div> */}
-      <div className="scrollbar-hide md:w-[50vw] lg:overflow-y-scroll">
+      <div className="scrollbar-hide mt-[100px] md:w-[50vw] lg:overflow-y-scroll">
         <div className="mx-auto flex w-full flex-col items-center justify-center opacity-70 md:w-[80%] lg:w-[50%]">
           <div className="flex h-[50vh] w-full justify-center md:h-[56%]">
             <PieChart />
           </div>
-          <p className="h11-style text-center">
+          <p className="h11-style mt-10 text-center">
             87% of organizations are currently using AI or exploring its
             applications, according to McKinsey.
           </p>

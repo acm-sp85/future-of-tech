@@ -5,6 +5,8 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
+
   theme: {
     extend: {
       scrollbar: {
@@ -40,6 +42,7 @@ module.exports = {
         64: "64px",
         48: "48px",
         32: "32px",
+        20: "20px",
         16: "16px",
         14: "14px",
         12: "12px",

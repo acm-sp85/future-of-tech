@@ -35,9 +35,11 @@ export default function Home() {
       <div>
         <ArtificialIntelligence />
       </div>
-      {/* <div className="h-[2px] w-full bg-yellow"> </div>
+
+      <div className="h-[2px] w-full bg-yellow"> </div>
       <div className="mt-1 h-[1px] w-full bg-blue"> </div>
       <ArVr />
+      {/*
     <div className="h-[2px] w-full bg-yellow"> </div>
       <BlockChain />
       <div className="h-[3px] w-full bg-yellow"> </div>

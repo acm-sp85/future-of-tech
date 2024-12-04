@@ -28,6 +28,7 @@ const PieChart = () => {
     },
     plugins: {
       legend: {
+        position: "bottom",
         labels: {
           color: "#F3E3C1", // Blue color for legend labels
           font: {
@@ -46,8 +47,7 @@ const PieChart = () => {
   };
 
   return (
-    // <div className="flex h-[50vh] w-[100vw] items-center justify-center md:w-full">
-    <div className="flex h-[50vh] w-[100vw] items-center justify-center p-5 md:w-full md:p-0 lg:h-[40vh]">
+    <div className="flex w-full items-center justify-center p-5 md:p-0 lg:h-[40vh]">
       <Pie data={data} options={options} />
     </div>
   );

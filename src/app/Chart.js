@@ -45,9 +45,10 @@ const BarChart = () => {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
- 
+
     plugins: {
       legend: {
+        position: "bottom",
         labels: {
           color: "#F3E3C1", // Custom color for legend text
           font: {
