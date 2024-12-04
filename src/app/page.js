@@ -39,8 +39,8 @@ export default function Home() {
       <div className="h-[2px] w-full bg-yellow"> </div>
       <div className="mt-1 h-[1px] w-full bg-blue"> </div>
       <ArVr />
-      {/*
-    <div className="h-[2px] w-full bg-yellow"> </div>
+
+      <div className="h-[2px] w-full bg-yellow"> </div>
       <BlockChain />
       <div className="h-[3px] w-full bg-yellow"> </div>
       <div className="mt-2 h-[2px] w-full bg-green"> </div>
@@ -53,7 +53,7 @@ export default function Home() {
       <SustainableTechLanding />
       <SustainableTech />
       <div className="h-[1px] w-[100vw] bg-blue"></div>
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
