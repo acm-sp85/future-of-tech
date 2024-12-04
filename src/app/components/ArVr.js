@@ -26,12 +26,12 @@ function ArVr() {
           </p>
         </div>
       </div>
-      {/* VISIBLE ONLY ON MOBILE */}
+
       <div className="h-[50vh] grid-cols-1 md:hidden md:grid-cols-2">
         <ArVrImage />
 
         <div className="h-full items-center justify-center md:w-[50%]">
-          {/* <div className="hidden h-[1px] w-2 bg-red md:block md:translate-x-[275px] md:translate-y-[92px]"></div> */}
+          <div className="hidden h-[1px] w-2 bg-red md:block md:translate-x-[275px] md:translate-y-[92px]"></div>
           <div className="flex">
             <p className="h8-style mx-auto mt-20 w-[90%] bg-darkGrey text-center md:w-[300px] md:translate-x-[50px] md:text-justify">
               AR market: Projected to reach $198 billion by 2028, according to
@@ -55,7 +55,7 @@ function ArVr() {
           </div>
         </div>
       </div>
-      {/* VISIBLE ONLY ON DESKTOP */}
+
       <div className="hidden h-[50vh] grid-cols-1 md:flex md:grid-cols-2">
         <ArVrImage />
         <div className="h-full items-center justify-center md:w-[50vh]">
