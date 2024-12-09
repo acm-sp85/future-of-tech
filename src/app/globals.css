@@ -141,22 +141,22 @@ li::before {
 }
 
   .h1regular-style {
-    @apply font-inter lg:text-128 md:text-96 sm:text-32 text-offWhite;
+    @apply font-inter lg:text-128 md:text-96 text-32 text-offWhite;
   }
   .h2-style {
-    @apply font-inter lg:text-96 md:text-70 sm:text-16 font-bold text-offWhite;
+    @apply font-inter lg:text-96 md:text-70 text-16 font-bold text-offWhite;
   }
   .h3-style {
-    @apply font-italiana lg:text-70 md:text-64 sm:text-48  text-offWhite;
+    @apply font-italiana lg:text-70 text-32  text-offWhite;
   }
   .h4-style {
-    @apply font-italiana lg:text-64 md:text-32 sm:text-12  text-offWhite;
+    @apply font-italiana lg:text-64 md:text-32 text-12  text-offWhite;
   }
   .h5-style {
-    @apply font-italiana lg:text-32 md:text-14 sm:text-12  text-offWhite;
+    @apply font-italiana lg:text-32 md:text-14 text-12  text-offWhite;
   }
   .h6-style {
-    @apply font-jura lg:text-32 md:text-14 sm:text-12  text-offWhite;
+    @apply font-jura lg:text-32 text-14   text-offWhite;
   }  
   .h8-style {
     @apply font-inter text-16  text-offWhite;

@@ -19,7 +19,7 @@ export default function Home() {
         <NavBar />
       </div>
 
-      <div className="sticky right-0 top-0 z-50 flex w-[100vw] lg:hidden">
+      <div className="sticky top-0 z-50 flex lg:hidden">
         <NavBarPhone />
       </div>
       <div className="h-[100vh]">

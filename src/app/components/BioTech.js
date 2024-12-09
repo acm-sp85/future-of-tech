@@ -1,11 +1,39 @@
 import Image from "next/image";
+import BioTechStats from "./BioTechStats";
 
 function BioTech() {
   return (
-    <div className="flex w-full snap-center" id="bio-tech">
-      <div className="h-[100vh] w-[50vw]">
-        <p className="h3-style ml-8 mt-24">Biotechnology</p>
-        <p className="p-style ml-24 mr-24 mt-24">
+    <div
+      className="grid h-auto w-[100vw] grid-cols-1 md:h-[100vh] md:grid-cols-2"
+      id="bio-tech"
+    >
+      <div className="md:h-[100vh] md:w-[50vw]">
+        <div className="relative mr-24 mt-24 flex h-[80vh] w-[100vw] justify-center opacity-70 md:hidden">
+          <Image
+            src="/ink-drawing-of-biotechnology.png"
+            alt="robot-L"
+            class="absolute bottom-0 left-4 h-32 w-auto"
+            width={100}
+            height={100}
+          />
+
+          <Image
+            src="/ink-drawing-of-a-microscope.png"
+            alt="microscope"
+            class="my-auto h-64 w-auto object-contain"
+            width={300}
+            height={300}
+          />
+          <Image
+            src="/a-three-tone-drawing-of-a-dna-sequence-.png"
+            alt="DNA"
+            class="absolute right-4 ml-5 h-[150px] w-auto rotate-90 scale-x-[-1] object-contain"
+            width={100}
+            height={100}
+          />
+        </div>
+        <p className="h3-style mx-auto mt-24 w-max md:ml-8">Biotechnology</p>
+        <p className="p-style m-6 text-justify md:ml-24 md:mr-24 md:mt-24 mb-20">
           Biotechnology is the application of biological processes to solve
           problems and create new products. It involves the use of living
           organisms or their parts to develop products such as medicines,
@@ -13,7 +41,7 @@ function BioTech() {
           range of applications in fields like healthcare, agriculture, and
           environmental science.
         </p>
-        <div className="mr-24 mt-24 flex justify-center opacity-70">
+        <div className="mr-24 mt-24 hidden justify-center opacity-70 md:flex">
           <Image
             src="/ink-drawing-of-biotechnology.png"
             alt="robot-L"
@@ -38,28 +66,9 @@ function BioTech() {
           />
         </div>
       </div>
-      <div className="h-[100vh] w-[1px] bg-red"></div>
-      <div className="p-style scrollbar-hide ml-auto h-[100vh] w-[50%] snap-y justify-center overflow-y-scroll">
-        <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] snap-center items-end rounded-3xl ring-2 ring-blue">
-          <p className="h4-style mb-[50px] ml-12 w-[80%] leading-[80px]">
-            Projected to reach $842.8 billion by 2028
-          </p>
-        </div>
-        <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] snap-center flex-col rounded-3xl ring-2 ring-blue">
-          <p className="h4-style -mb-[300px] ml-12 mt-auto w-[80%] leading-[80px]">
-            Gene editing: CRISPR to grow
-          </p>
-          <p className="hx-style mb-[100px] ml-12 mt-auto leading-[80px]">
-            21.7%
-          </p>
-        </div>
-
-        <div className="shadow-outline mx-auto mb-10 mt-1 flex h-[700px] w-[700px] snap-center items-end rounded-3xl ring-2 ring-blue">
-          <p className="h4-style mb-[50px] ml-12 w-[80%] leading-[80px]">
-            The personalized medicine market is estimated to reach $252 billion
-            by 2027{" "}
-          </p>
-        </div>
+      {/* <div className="h-[100vh] w-[1px] bg-red"></div> */}
+      <div className="md:w-[50vw]">
+        <BioTechStats />
       </div>
     </div>
   );

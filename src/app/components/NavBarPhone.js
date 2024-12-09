@@ -4,20 +4,20 @@ import HamburgerMenu from "react-hamburger-menu";
 const NavBarPhone = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [menuColor, setMenuColor] = useState("red");
+  const [menuColor, setMenuColor] = useState("#F3E3C1");
 
   const menuClicked = () => {
     setIsOpen(!isOpen);
 
     setShowMenu(!showMenu);
-    if (menuColor === "red") {
-      setMenuColor("white");
+    if (menuColor === "#CD320C") {
+      setMenuColor("#F3E3C1");
     } else {
-      setMenuColor("red");
+      setMenuColor("#CD320C");
     }
   };
   return (
-    <div className="flex">
+    <div className="w-full">
       {showMenu && (
         <div className={"modal z-0"}>
           <ul>
@@ -49,18 +49,20 @@ const NavBarPhone = () => {
           </ul>
         </div>
       )}
-      <HamburgerMenu
-        className="right-0 top-0 z-50 m-[15px]"
-        isOpen={isOpen}
-        menuClicked={menuClicked}
-        width={28}
-        height={25}
-        strokeWidth={1.5}
-        rotate={0}
-        color={menuColor}
-        borderRadius={0}
-        animationDuration={0.5}
-      />
+      <div className="w-full">
+        <HamburgerMenu
+          className="top-0 z-50 m-[15px] ml-auto"
+          isOpen={isOpen}
+          menuClicked={menuClicked}
+          width={28}
+          height={25}
+          strokeWidth={1.5}
+          rotate={0}
+          color={menuColor}
+          borderRadius={0}
+          animationDuration={0.5}
+        />
+      </div>
     </div>
   );
 };
