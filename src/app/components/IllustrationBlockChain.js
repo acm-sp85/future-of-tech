@@ -21,7 +21,7 @@ function IllustrationBlockChain() {
       <Image
         src="/an-ink-drawing-of-an-old-computer-clean-background-copy.png"
         alt="robot-R"
-        class="ml-5 h-32 w-auto -translate-x-6 translate-y-40 scale-x-[-1] object-contain"
+        class="ml-5 h-32 w-auto -translate-x-[50px] translate-y-40 scale-x-[-1] object-contain"
         width={100}
         height={100}
       />

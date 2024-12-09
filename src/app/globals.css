@@ -159,7 +159,7 @@ li::before {
     @apply font-jura lg:text-32 text-14   text-offWhite;
   }  
   .h8-style {
-    @apply font-inter text-16  text-offWhite;
+    @apply font-inter md:text-16 text-12  text-offWhite;
   }
   .h9-style {
     @apply font-jura font-bold text-16  text-offWhite;
