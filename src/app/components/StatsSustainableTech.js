@@ -2,8 +2,8 @@ import React from "react";
 
 function StatsSustainableTech() {
   return (
-    <div className="scrollbar-hide m-6  grid h-[100vh] grid-cols-2 gap-4 overflow-y-scroll p-2">
-      <div className="h-[100%] w-[100%] ">
+    <div className="scrollbar-hide m-6 grid grid-cols-2 gap-4 p-2 md:h-[100vh] md:overflow-y-scroll">
+      <div className="h-[100%] w-[100%]">
         <div className="relative mx-auto h-[490px] w-[100%]">
           <div className="shadow-outline mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-blue">
             <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-blue"></div>
