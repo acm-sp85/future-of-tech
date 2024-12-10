@@ -1,8 +1,8 @@
 function StatsBlockChain() {
   return (
-    <div className="p-style scrollbar-hide ml-auto flex flex-col justify-center md:h-[100vh] md:w-[50vw] md:overflow-y-scroll mb-20">
+    <div className="p-style scrollbar-hide bg-backgroundWithTransparency mb-20 ml-auto flex flex-col justify-center md:h-[100vh] md:w-[50vw] md:overflow-y-scroll">
       <div className="mx-auto flex h-[80%] w-[80%] flex-col justify-center">
-        <div className="mt-16 flex h-[20%] flex-col bg-darkGrey">
+        <div className="mt-16 flex h-[20%] flex-col">
           <div className="flex translate-y-[50px] justify-end md:translate-y-[30px]">
             <p className="h1regular-style">30</p>
             <p className="h4-style md:translate-y-[20px]">%</p>
@@ -15,7 +15,7 @@ function StatsBlockChain() {
             <div className="triangle-green absolute left-[30%]"></div>
           </div>
         </div>
-        <div className="mt-16 flex h-[20%] flex-col bg-darkGrey">
+        <div className="mt-16 flex h-[20%] flex-col">
           <div className="flex translate-y-[50px] justify-end md:translate-y-[30px]">
             <p className="h1regular-style">25</p>
             <p className="h4-style md:translate-y-[20px]">%</p>
@@ -28,7 +28,7 @@ function StatsBlockChain() {
             <div className="triangle-yellow absolute left-[25%]"></div>
           </div>
         </div>
-        <div className="mt-16 flex h-[20%] flex-col bg-darkGrey">
+        <div className="mt-16 flex h-[20%] flex-col">
           <div className="flex translate-y-[50px] justify-end md:translate-y-[30px]">
             <p className="h1regular-style">25</p>
             <p className="h4-style md:translate-y-[20px]">%</p>
@@ -41,7 +41,7 @@ function StatsBlockChain() {
             <div className="triangle-blue absolute left-[25%]"></div>
           </div>
         </div>
-        <div className="mt-16 flex h-[20%] flex-col bg-darkGrey">
+        <div className="mt-16 flex h-[20%] flex-col">
           <div className="flex translate-y-[50px] justify-end md:translate-y-[30px]">
             <p className="h1regular-style">20</p>
             <p className="h4-style md:translate-y-[20px]">%</p>

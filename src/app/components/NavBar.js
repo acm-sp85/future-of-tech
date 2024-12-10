@@ -42,13 +42,13 @@ const NavBar = () => {
           </p>
         </div>
       )}
-      <nav className="mt-4 flex">
-        <div className="ml-5 flex h-8 w-[15%] items-center text-white">
+      <nav className="bg-backgroundNavBar flex">
+        <div className="ml-5 mt-2 flex h-8 w-[15%] items-center text-white">
           <a href="#">
             <Image src="/logo.png" alt="Logo" width={150} height={150} />
           </a>
         </div>
-        <div className="justify-left flex h-8 w-[70%] items-center justify-between">
+        <div className="justify-left mt-2 flex h-8 w-[70%] items-center justify-between">
           <a className="h8-style sm:text-sm" href="#ai">
             Artificial Intelligence
           </a>
@@ -65,7 +65,7 @@ const NavBar = () => {
             Sustainable Tech
           </a>
         </div>
-        <div className="mr-5 flex w-[15%] justify-end">
+        <div className="mr-5 mt-2 flex w-[15%] justify-end">
           <button
             className="h11-style flex h-8 items-center justify-center rounded-2xl bg-red px-5"
             onClick={triggerModal}

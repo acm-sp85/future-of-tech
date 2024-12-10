@@ -6,7 +6,6 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
 
-
   theme: {
     extend: {
       scrollbar: {
@@ -23,6 +22,8 @@ module.exports = {
       },
       colors: {
         background: "#282828",
+        backgroundWithTransparency: "rgba(40, 40, 40, 0.5)",
+        backgroundNavBar: "rgba(40, 40, 40, 0.8)",
         foreground: "var(--foreground)",
         darkGrey: "#282828",
         yellow: "#F69425",
