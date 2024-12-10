@@ -5,7 +5,7 @@ function StatsSustainableTech() {
     <div className="scrollbar-hide m-6 grid grid-cols-2 gap-4 p-2 lg:h-[100vh] lg:overflow-y-scroll">
       <div className="h-[100%] w-[100%]">
         <div className="relative mx-auto h-[490px] w-[100%]">
-          <div className="shadow-outline mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-blue">
+          <div className="shadow-outline mx-auto flex min-h-[300px] lg:min-h-[490px] w-[100%] items-end rounded-3xl ring-2 ring-blue">
             <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-blue"></div>
             <p className="h6-style m-10">
               <u>Energy efficiency:</u> Technologies that reduce energy
@@ -14,7 +14,7 @@ function StatsSustainableTech() {
           </div>
         </div>
         <div className="relative mx-auto mt-[19px] h-[490px] w-[100%]">
-          <div className="shadow-outline mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-red">
+          <div className="shadow-outline mx-auto flex min-h-[300px] lg:min-h-[490px] w-[100%] items-end rounded-3xl ring-2 ring-red">
             <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-red"></div>
             <p className="h6-style m-10">
               <u>Electric vehicles:</u> Vehicles powered by electricity rather
@@ -24,7 +24,7 @@ function StatsSustainableTech() {
         </div>
       </div>
       <div className="h-[1000px] w-[100%]">
-        <div className="shadow-outline relative mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-yellow">
+        <div className="shadow-outline relative mx-auto flex min-h-[300px] lg:min-h-[1000px] w-[100%] items-end rounded-3xl ring-2 ring-yellow">
           <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-yellow"></div>
           <p className="h6-style m-10">
             <u>Renewable energy:</u> its sources are derived from natural
@@ -35,7 +35,7 @@ function StatsSustainableTech() {
         </div>
       </div>
       <div className="relative col-span-2 h-[300px] w-[100%]">
-        <div className="shadow-outline mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-green">
+        <div className="shadow-outline mx-auto flex min-h-[300px] lg:min-h-[300px] w-[100%] items-end rounded-3xl ring-2 ring-green">
           <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-green"></div>
           <p className="h6-style m-10">
             <u>Sustainable materials:</u> Biodegradable materials, recycled
@@ -45,7 +45,7 @@ function StatsSustainableTech() {
       </div>
 
       <div className="relative col-span-1 mx-auto h-[600px] w-[100%]">
-        <div className="shadow-outline mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-yellow">
+        <div className="shadow-outline mx-auto flex min-h-[300px] lg:min-h-[600px] w-[100%] items-end rounded-3xl ring-2 ring-yellow">
           <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-yellow"></div>
           <p className="h6-style m-10">
             <u>Waste reduction and recycling:</u> Technologies that minimize
@@ -54,7 +54,7 @@ function StatsSustainableTech() {
         </div>
       </div>
       <div className="relative col-span-1 mx-auto h-[600px] w-[100%]">
-        <div className="shadow-outline relative mx-auto flex h-[100%] w-[100%] items-end rounded-3xl ring-2 ring-blue">
+        <div className="shadow-outline relative mx-auto flex min-h-[300px] lg:min-h-[600px] w-[100%] items-end rounded-3xl ring-2 ring-blue">
           <div className="absolute right-0 top-0 m-4 h-16 w-16 rounded-full border-2 border-blue"></div>
           <p className="h6-style m-10">
             <u>Water conservation:</u> Technologies that reduce water
