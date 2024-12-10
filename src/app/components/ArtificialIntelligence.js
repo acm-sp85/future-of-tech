@@ -10,7 +10,7 @@ function ArtificialIntelligence() {
     >
       <div className="relative lg:h-[100vh] lg:w-[50vw]">
         <p className="h3-style ml-8 mt-24">Artificial Intelligence (AI)</p>
-        <p className="p-style bg-backgroundWithTransparency absolute z-10 m-6 text-justify">
+        <p className="p-style bg-backgroundWithTransparency z-10 m-6 text-justify">
           AI is the simulation of human intelligence in machines, programmed to
           think and learn like humans. It encompasses a wide range of
           capabilities, including understanding natural language, recognizing
@@ -47,7 +47,7 @@ function ArtificialIntelligence() {
       </div>
 
       <div className="scrollbar-hide mt-[100px] lg:w-[50vw] lg:overflow-y-scroll">
-        <div className="mx-auto flex w-full flex-col items-center justify-center opacity-70 lg:w-[50%] lg:w-[80%]">
+        <div className="mx-auto flex w-full flex-col items-center justify-center opacity-70 lg:w-[50%]">
           <div className="flex h-[50vh] w-full justify-center lg:h-[56%]">
             <PieChart />
           </div>
