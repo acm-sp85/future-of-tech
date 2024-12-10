@@ -4,7 +4,7 @@ import BioTechStats from "./BioTechStats";
 function BioTech() {
   return (
     <div
-      className="grid h-auto w-[100vw] grid-cols-1 lg:h-[100vh] lg:grid-cols-2"
+      className="grid h-auto w-[100vw] grid-cols-1 lg:h-auto lg:grid-cols-2"
       id="bio-tech"
     >
       <div className="lg:h-[100vh] lg:w-[50vw]">
@@ -41,7 +41,7 @@ function BioTech() {
           range of applications in fields like healthcare, agriculture, and
           environmental science.
         </p>
-        <div className="mr-24 mt-24 hidden justify-center opacity-70 lg:flex">
+        <div className="hidden justify-center opacity-70 lg:flex">
           <Image
             src="/ink-drawing-of-biotechnology.png"
             alt="robot-L"

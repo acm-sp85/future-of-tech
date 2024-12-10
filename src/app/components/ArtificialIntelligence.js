@@ -8,7 +8,7 @@ function ArtificialIntelligence() {
       className="grid h-auto w-[100vw] grid-cols-1 lg:h-[100vh] lg:grid-cols-2"
       id="ai"
     >
-      <div className="relative lg:h-[100vh] lg:w-[50vw]">
+      <div className="relative lg:h-auto lg:w-[50vw]">
         <p className="h3-style ml-8 mt-24">Artificial Intelligence (AI)</p>
         <p className="p-style bg-backgroundWithTransparency z-10 m-6 text-justify">
           AI is the simulation of human intelligence in machines, programmed to
