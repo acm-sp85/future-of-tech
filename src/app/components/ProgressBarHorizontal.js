@@ -1,8 +1,8 @@
 function ProgressBar() {
   return (
     <div className="mx-auto mt-10 translate-y-[670px] md:mt-0">
-      <div className="shadow-outline bg-grey mx-auto h-[58px] w-[800px] bg-darkGrey ring-2 ring-green">
-        <div className="m-1 h-[52px] w-[200px] translate-y-[3px] bg-green"></div>
+      <div className="shadow-outline bg-grey mx-auto h-[58px] w-[800px] bg-darkGrey p-1 ring-2 ring-green">
+        <div className=" h-full w-[200px] bg-green"></div>
       </div>
       <div className="mx-auto flex w-[804px] translate-y-1 justify-between">
         <div className="h-2 w-[2px] bg-green"></div>

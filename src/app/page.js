@@ -13,6 +13,8 @@ import SustainableTechLanding from "./components/SustainableTechLanding";
 import SustainableTech from "./components/SustainableTech";
 import Footer from "./components/Footer";
 export default function Home() {
+
+ 
   return (
     <div className="bg-darkGrey">
       <div className="sticky top-0 z-50 hidden w-[100vw] lg:flex">
@@ -30,7 +32,7 @@ export default function Home() {
       <div className="hidden md:flex">
         <GlobalImpact />
       </div>
-      <div className="flex h-[1px] w-full bg-yellow"> </div>
+      <div className="hidden h-[1px] w-full bg-yellow md:flex"> </div>
       <div>
         <ArtificialIntelligence />
       </div>

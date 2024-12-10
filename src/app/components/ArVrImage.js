@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ArVrImage() {
   return (
-    <div className="flex h-full overflow-hidden opacity-70 md:mt-10 md:w-[50vw] md:translate-x-[10%]">
+    <div className="flex overflow-hidden opacity-70 md:mt-10 md:w-[50vw] md:translate-x-[10%]">
       <Image
         src="/drawing-of-a-planet-with-no-background.png"
         alt="planet-top-left"

@@ -4,11 +4,11 @@ import BioTechStats from "./BioTechStats";
 function BioTech() {
   return (
     <div
-      className="grid h-auto w-[100vw] grid-cols-1 md:h-[100vh] md:grid-cols-2"
+      className="grid h-auto w-[100vw] grid-cols-1 lg:h-[100vh] lg:grid-cols-2"
       id="bio-tech"
     >
-      <div className="md:h-[100vh] md:w-[50vw]">
-        <div className="relative mr-24 mt-24 flex h-[80vh] w-[100vw] justify-center opacity-70 md:hidden">
+      <div className="lg:h-[100vh] lg:w-[50vw]">
+        <div className="relative mr-24 mt-24 flex h-[80vh] w-[100vw] justify-center opacity-70 lg:hidden">
           <Image
             src="/ink-drawing-of-biotechnology.png"
             alt="robot-L"
@@ -32,8 +32,8 @@ function BioTech() {
             height={100}
           />
         </div>
-        <p className="h3-style mx-auto mt-24 w-max md:ml-8">Biotechnology</p>
-        <p className="p-style m-6 text-justify md:ml-24 md:mr-24 md:mt-24 mb-20">
+        <p className="h3-style mx-auto mt-24 w-max lg:ml-8">Biotechnology</p>
+        <p className="p-style m-6 mb-20 text-justify lg:ml-24 lg:mr-24 lg:mt-24">
           Biotechnology is the application of biological processes to solve
           problems and create new products. It involves the use of living
           organisms or their parts to develop products such as medicines,
@@ -41,7 +41,7 @@ function BioTech() {
           range of applications in fields like healthcare, agriculture, and
           environmental science.
         </p>
-        <div className="mr-24 mt-24 hidden justify-center opacity-70 md:flex">
+        <div className="mr-24 mt-24 hidden justify-center opacity-70 lg:flex">
           <Image
             src="/ink-drawing-of-biotechnology.png"
             alt="robot-L"
@@ -67,7 +67,7 @@ function BioTech() {
         </div>
       </div>
       {/* <div className="h-[100vh] w-[1px] bg-red"></div> */}
-      <div className="md:w-[50vw]">
+      <div className="lg:w-[50vw]">
         <BioTechStats />
       </div>
     </div>
