@@ -12,20 +12,19 @@ import BioTech from "./components/BioTech";
 import SustainableTechLanding from "./components/SustainableTechLanding";
 import SustainableTech from "./components/SustainableTech";
 import Footer from "./components/Footer";
-import { useScroll, useTransform, motion } from "framer-motion";
-import { useRef } from "react";
+import { useScroll, useTransform, motion, useInView } from "motion/react";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
-  const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["start end", "end start"],
-  });
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  // useEffect(() => {
+  //   console.log("Is in view ->", isInView);
+  // }, [isInView]);
 
   return (
-    <motion.section ref={targetRef} style={{ opacity }}>
+    <motion.section>
       <div className="bg-darkGrey">
         <div className="sticky top-0 z-50 hidden w-[100vw] lg:flex">
           <NavBar />
@@ -43,9 +42,7 @@ export default function Home() {
           <GlobalImpact />
         </div>
         <div className="hidden h-[1px] w-full bg-yellow md:flex"> </div>
-        <div>
-          <ArtificialIntelligence />
-        </div>
+        <div ref={ref}>{isInView && <ArtificialIntelligence />}</div>
 
         <div className="h-[2px] w-full bg-yellow"> </div>
         <div className="mt-1 h-[1px] w-full bg-blue"> </div>
@@ -59,6 +56,7 @@ export default function Home() {
         <div className="mt-4 h-[1px] w-full bg-blue"> </div>
         <BillsQuote />
         <div className="h-[1px] w-full bg-yellow"> </div>
+
         <BioTech />
         <div className="h-[1px] w-full bg-green"> </div>
         <SustainableTechLanding />
