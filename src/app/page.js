@@ -47,7 +47,7 @@ export default function Home() {
           right: 0,
           height: 10,
           originX: 0,
-          backgroundColor: "#67AADE",
+          backgroundColor: "#CD320C",
         }}
       />
       <motion.section>
