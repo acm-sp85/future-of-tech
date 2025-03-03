@@ -9,10 +9,10 @@ function TheFutureOfTechnology() {
         <span className="h1-style mb-2 ml-3 lg:ml-8">of Technology</span>
       </div>
 
-      <p className="p-style absolute bottom-[-1px] translate-x-40 sm:translate-x-0 md:right-5">
+      <p className="p-style absolute bottom-[-1px] translate-x-40 animate-bounce sm:translate-x-0 md:right-5">
         &#8595; Scroll Down
       </p>
-      <div className="absolute md:bottom-0 h-[1px] w-full bg-blue translate-y-[430px] md:translate-y-0"></div>
+      <div className="absolute h-[1px] w-full translate-y-[430px] bg-blue md:bottom-0 md:translate-y-0"></div>
     </div>
   );
 }
